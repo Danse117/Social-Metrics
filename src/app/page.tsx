@@ -7,6 +7,7 @@ import { MetricsChart } from "@/components/MetricsChart"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Footer from "@/components/Footer"
+
 // Sample profile data
 const sampleProfiles = [
   {
@@ -62,7 +63,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
       <div className="flex flex-col flex-1">
-        
+
       <div className="flex flex-1 px-10 py-5 fixed">
         <ProfileSidebar
           profiles={sampleProfiles}
