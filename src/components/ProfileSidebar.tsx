@@ -29,7 +29,7 @@ export function ProfileSidebar({
   return (
     <div
       className={cn(
-        "flex h-full w-20 flex-col items-center gap-2 bg-gray-900/95 p-2 backdrop-blur-sm",
+        "flex h-full w-20 flex-col items-center gap-2 bg-gray-500 p-2 backdrop-blur-sm rounded-3xl",
         className
       )}
     >
