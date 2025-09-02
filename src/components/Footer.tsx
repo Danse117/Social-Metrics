@@ -29,55 +29,55 @@ const defaultSections = [
   {
     title: "Product",
     links: [
-      { name: "Overview", href: "#" },
-      { name: "Pricing", href: "#" },
-      { name: "Marketplace", href: "#" },
-      { name: "Features", href: "#" },
+      { name: "Overview", href: "/" },
+      { name: "Pricing", href: "/" },
+      { name: "Marketplace", href: "/" },
+      { name: "Features", href: "/" },
     ],
   },
   {
     title: "Company",
     links: [
-      { name: "About", href: "#" },
-      { name: "Team", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Careers", href: "#" },
+      { name: "About", href: "/" },
+      { name: "Team", href: "/" },
+      { name: "Blog", href: "/" },
+      { name: "Careers", href: "/" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { name: "Help", href: "#" },
-      { name: "Sales", href: "#" },
-      { name: "Advertise", href: "#" },
-      { name: "Privacy", href: "#" },
+      { name: "Help", href: "/" },
+      { name: "Sales", href: "/" },
+      { name: "Advertise", href: "/" },
+      { name: "Privacy", href: "/" },
     ],
   },
 ];
 
 const defaultSocialLinks = [
-  { icon: <FaInstagram className="size-5" />, href: "#", label: "Instagram" },
-  { icon: <FaFacebook className="size-5" />, href: "#", label: "Facebook" },
-  { icon: <FaTwitter className="size-5" />, href: "#", label: "Twitter" },
-  { icon: <FaLinkedin className="size-5" />, href: "#", label: "LinkedIn" },
+  { icon: <FaInstagram className="size-5" />, href: "/", label: "Instagram" },
+  { icon: <FaFacebook className="size-5" />, href: "/", label: "Facebook" },
+  { icon: <FaTwitter className="size-5" />, href: "/", label: "Twitter" },
+  { icon: <FaLinkedin className="size-5" />, href: "/", label: "LinkedIn" },
 ];
 
 const defaultLegalLinks = [
-  { name: "Terms and Conditions", href: "#" },
-  { name: "Privacy Policy", href: "#" },
+  { name: "Terms and Conditions", href: "/" },
+  { name: "Privacy Policy", href: "/" },
 ];
 
 const Footer = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
+    url: "/",
+    src: "/social-metrics-logo.png",
     alt: "logo",
-    title: "Shadcnblocks.com",
+    title: "Social Metrics",
   },
   sections = defaultSections,
-  description = "A collection of components for your startup business or side project.",
+  description = "Social Metrics",
   socialLinks = defaultSocialLinks,
-  copyright = "© 2024 Shadcnblocks.com. All rights reserved.",
+  copyright = "© 2025 Social Metrics. All rights reserved.",
   legalLinks = defaultLegalLinks,
 }: FooterProps) => {
   return (

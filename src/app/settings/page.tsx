@@ -1,9 +1,7 @@
-import React from "react"
 import { redirect } from "next/navigation"
 import { supabaseServer } from "@/lib/supabase-server"
-import DashboardClient from "../components/DashboardClient"
 
-export default async function Dashboard() {
+export default async function SettingsPage() {
   const supabase = await supabaseServer()
   const { data: { user } } = await supabase.auth.getUser()
   
@@ -11,5 +9,6 @@ export default async function Dashboard() {
     redirect('/auth/sign-in')
   }
 
-  return <DashboardClient />
-}
+  // Redirect to profile page since settings and profile are similar
+  redirect('/profile')
+} 
