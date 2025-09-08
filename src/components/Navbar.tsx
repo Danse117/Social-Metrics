@@ -31,8 +31,8 @@ export default function Navbar({ className = '' }: NavbarProps) {
             <Image
               src="/social-metrics-logo.png"
               alt="SocialMetrics Logo"
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               className="mr-3"
             />
             <h1 className="text-3xl font-bold text-gray-900">SocialMetrics</h1>

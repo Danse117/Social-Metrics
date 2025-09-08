@@ -1,3 +1,12 @@
+/**
+ * Database Operations for User Profiles
+ * 
+ * This file contains database utility functions for managing user profiles
+ * in Supabase. Provides CRUD operations for user profile data including
+ * creation, retrieval, and updates. Handles profile initialization for
+ * new users during the authentication process.
+ */
+
 import { supabaseServer } from "./supabase-server"
 
 export interface UserProfile {

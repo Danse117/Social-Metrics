@@ -1,3 +1,11 @@
+/**
+ * Supabase Server Client
+ * 
+ * This file creates and configures a Supabase client for server-side operations.
+ * Uses Next.js cookies to maintain authentication state across server components
+ * and API routes. Handles cookie management for SSR authentication flow.
+ */
+
 import { createServerClient } from "@supabase/ssr"
 import { cookies } from "next/headers"
 

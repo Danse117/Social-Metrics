@@ -25,6 +25,8 @@ interface MetricsChartProps {
   chartType: ChartType
   metricType: MetricType
   className?: string
+  data?: Array<{ date: string; value: number; target?: number }>
+  loading?: boolean
 }
 
 // Sample data for different metrics
@@ -106,9 +108,31 @@ const chartConfig = {
   },
 }
 
-export function MetricsChart({ chartType, metricType, className }: MetricsChartProps) {
-  const data = sampleData[metricType]
+export function MetricsChart({ 
+  chartType, 
+  metricType, 
+  className, 
+  data: providedData,
+  loading = false 
+}: MetricsChartProps) {
+  const data = providedData || sampleData[metricType]
   const config = chartConfig[metricType]
+  
+  if (loading) {
+    return (
+      <div className={className}>
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-900 capitalize">
+            {metricType.replace(/([A-Z])/g, " $1").trim()} Metrics
+          </h3>
+          <p className="text-sm text-gray-500">Loading data...</p>
+        </div>
+        <div className="h-[300px] flex items-center justify-center bg-gray-50 rounded-lg">
+          <div className="text-gray-500">Loading chart data...</div>
+        </div>
+      </div>
+    )
+  }
 
   const renderChart = () => {
     switch (chartType) {

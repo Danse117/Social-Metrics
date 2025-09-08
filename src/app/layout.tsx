@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Social Metrics",
   description: "Social Metrics",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
